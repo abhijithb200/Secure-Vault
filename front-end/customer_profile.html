@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="container rounded bg-white mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-3 border-right">
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                    <img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
+                    <span id="nameheader" class="font-weight-bold"></span>
+                    <span id="emailhea" class="text-black-50"></span>
+                </div>
+            </div>
+            <div class="col-md-5 border-right">
+                <form id="profile-form" class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-right">Profile Settings</h4>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="row-md-6">
+                            <label class="labels">First Name</label>
+                            <div id="fname" type="text" class="form-control"></div>
+                            <label class="labels">Last Name</label>
+                            <div id="lname" type="text" class="form-control"></div>
+                            <label class="labels">Date of birth</label>
+                            <div id="dob" type="date" class="form-control"></div>
+
+                            <label class="labels">Mobile Number</label>
+                            <div id="phone" type="text" class="form-control"></div>
+                            <label class="labels">Credit Card</label>
+                            <div id="credit" type="text" class="form-control"></div>
+                            <label class="labels">Place</label>
+                            <div id="place" type="text" class="form-control"></div>
+                            <label class="labels">SSN</label>
+                            <div id="ssn" type="text" class="form-control"></div>
+                        </div>
+                    <div class="mt-5 text-center">
+                        <button id="submit" class="btn btn-primary profile-button" type="submit">Edit Profile</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="profile.js"></script>
+</body>
+</html>

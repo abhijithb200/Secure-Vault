@@ -1,0 +1,12 @@
+{
+    "tablename" : "customer",
+    "data" :{
+    "ssn": "898-45-6789",
+    "dob": "1981-01-01",
+    "credit_card": "4111-1111-1111-1111",
+    "place": "New York",
+    "firstName" : "John",
+    "lastName" : "Joseph",
+    "phone" : "123456789"
+    }
+}

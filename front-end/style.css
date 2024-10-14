@@ -1,0 +1,122 @@
+body {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGSCa6Z8AtBoLV8IgUc0oNsUiKjAcA-X1wK5HlIs7v--1GAnhRGvIx7QYH&s=10");
+    background-size: auto;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size:100% 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.tab-container {
+    position: absolute;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color:rgba(255,255,255,0.4);
+    border-radius: 8px;
+}
+
+.tab-bar {
+    display: flex;
+}
+
+.tab-button {
+    color:#d7d3d0;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    transition: background-color 0.2s ease border-radius 0.2s ease;
+}
+
+#left-tab{
+  border-top-left-radius: 8px;
+  border-bottom-right-radius:8px;
+}
+#right-tab{
+  border-top-right-radius:8px;
+  border-bottom-left-radius: 8px;
+}
+
+.tab-button.active {
+    background-color:rgba(255,255,255,0);
+    border-top-right-radius:8px;
+    border-top-left-radius:8px;
+    color: white;
+    font-weight: 400;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content h2{
+  color:white;
+}
+
+.input {  
+    width: 90%;
+    color:white;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius:8px;
+    border:none;
+    background-color:rgba(0,0,0,0.2);
+    outline:none;
+}
+
+.button {
+    margin-top: 10px;
+    width: 50%;
+    margin-left: 65px;
+    padding: 10px;
+    font-size: 16px;
+    background: linear-gradient(45deg,#0033cc,#40A0FF);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.input::placeholder{
+  color:white;
+  font-weight:360;
+}
+
+.input:focus::placeholder{
+  color: transparent;
+}
+
+.button:hover:active {
+    background:linear-gradient(45deg,#002db3,#3399ff);
+}
+
+#OTP{
+  display:none;
+}
+
+#OTP input{
+  width:70%;
+}
+
+.Invalid{
+  display:none;
+  color:red;
+  margin-left:60px;
+}

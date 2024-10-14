@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tab-container">
+        <div class="tab-bar">
+            <button id="left-tab" class="tab-button active" onclick="openTab(event, 'customer')">Customer Login</button>
+            <button id="right-tab" class="tab-button" onclick="openTab(event, 'agent')">Agent Login</button>
+        </div>
+
+        <div id="customer" class="tab-content active">
+            <h2>Customer Login</h2>
+            <form id="customer-form">
+                <input id="customer_id" class="input" type="text" placeholder="Customer ID" required>
+                <input id="customer_pass" class="input" type="password" placeholder="Password" required>
+                <p id="Invalid-cred" class="Invalid">Invalid credentials</p>
+                <button class="button" id="customer-login-btn" type="submit">Login</button>
+            </form>
+            <form id="OTP">
+              <input class="input" id="OTP-val" type="text" placeholder="OTP" required>
+              <p id="Invalid-otp" class="Invalid">Invalid OTP</p>
+              <button class="button" type="submit">Verify & Continue</button>
+              <p>Click <a href="#">here</a> to resend OTP</p>
+            </form>
+        </div>
+
+        <div id="agent" class="tab-content">
+            <h2>Agent Login</h2>
+            <form id="agent-form">
+                <input class="input" type="text" placeholder="Agent ID" required>
+                <input class="input" type="password" placeholder="Password" required>
+                <p id="Invalid-cred2" class="Invalid">Invalid credentials</p>
+                <button class="button" type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

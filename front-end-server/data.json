@@ -1,0 +1,61 @@
+{
+    "tablename":"customer",
+    "columns": [
+        {
+            "name": "ssn",
+            "access": [
+                {"rolename": "admin", "type": "plaintext"},
+                {"rolename": "customerservice-alabama", "type": "masked"},
+                {"rolename": "customerservice-australia", "type": "masked"}
+            ]
+        },
+        {
+            "name": "dob",
+            "access": [
+                {"rolename": "admin", "type": "plaintext"},
+                {"rolename": "customerservice-alabama", "type": "masked"},
+                {"rolename": "customerservice-australia", "type": "masked"}
+            ]
+        },
+        {
+            "name": "credit_card",
+            "access": [
+                {"rolename": "admin", "type": "plaintext"},
+                {"rolename": "customerservice-alabama", "type": "masked"},
+                {"rolename": "customerservice-australia", "type": "masked"}
+            ]
+        },
+        {
+            "name": "place",
+            "access": [
+                {"rolename": "admin", "type": "plaintext"},
+                {"rolename": "customerservice-alabama", "type": "plaintext"},
+                {"rolename": "customerservice-australia", "type": "plaintext"}
+            ]
+        },
+        {
+            "name": "firstName",
+            "access": [
+                {"rolename": "admin", "type": "plaintext"},
+                {"rolename": "customerservice-alabama", "type": "masked"},
+                {"rolename": "customerservice-australia", "type": "masked"}
+            ]
+        },
+        {
+            "name": "lastName",
+            "access": [
+                {"rolename": "admin", "type": "plaintext"},
+                {"rolename": "customerservice-alabama", "type": "plaintext"},
+                {"rolename": "customerservice-australia", "type": "plaintext"}
+            ]
+        },
+        {
+            "name": "phone",
+            "access": [
+                {"rolename": "admin", "type": "plaintext"},
+                {"rolename": "customerservice-alabama", "type": "masked"},
+                {"rolename": "customerservice-australia", "type": "masked"}
+            ]
+        }
+    ]
+}
